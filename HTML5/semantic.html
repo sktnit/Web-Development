@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Demo</title>
+</head>
+
+<body>
+    <!-- Semantic HTML are used to give proper meaning to the websites and help search engines to analyze it properly. -->
+
+    <!-- List of semantic elements are: article aside details figcaption figure footer header main mark nav section summary time-->
+    <!-- This are act more or less like <div> elements -->
+
+    <!-- section and article both are used for sectioning a content -->
+
+    <!-- section is a thematic grouping of contents whereas an article is intended to be independently distributable or reusable-->
+    <section style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">
+        <p>Top Stories</p>
+        <section>
+            <p>News</p>
+            <article>Story 1</article>
+            <article>Story 2</article>
+            <article>Story 3</article>
+        </section>
+        <section>
+            <p>Sport</p>
+            <article>Story 1</article>
+            <article>Story 2</article>
+            <article>Story 3</article>
+        </section>
+    </section>
+
+    <!-- header or hgroup -->
+    <!-- header element is generally found at the top of a document a section or an article and usually contains the heading and some search tools  -->
+    <header>
+        <h1>Company A</h1>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact us</a></li>
+        </ul>
+        <form target="/search">
+            <input name="q" type="search" />
+            <input type="submit" />
+        </form>
+    </header>
+
+    <!--aside tag defines some content aside from the content it is placed in. -->
+    <aside
+        style="width: 40%; padding-left: 15px; margin-left:15px; float: right; font-style: italic;  background-color: lightgray;">
+        <p>This is a sidebar</p>
+    </aside>
+
+    <!-- hgroup element should be used where you want a main heading with one or more subheadings. -->
+    <hgroup>
+        <h1>Heading 1</h1>
+        <h2>Subheading 1</h2>
+        <h2>Subheading 2</h2>
+    </hgroup>
+
+    <!-- figure is for wrapping your image content around it, and figcaption is to caption your image -->
+    <figure>
+        <img src="https://source.unsplash.com/user/erondu/720x600" alt="image loading...">
+        <figcaption>Figur Caption</figcaption>
+    </figure>
+
+    <!-- footer contains author details, legal information, and/or links to related information. It is also valid to include <section> elements within a footer. -->
+    <footer style="text-align: center; padding: 5px; margin:0px; background-color: rgb(17, 15, 15); color: white;">
+        <small>&copy;Shailesh<time datetime="2020-07-19T21:48:00+02:00">&nbsp; Sunday, 19 July 2020</time></small>
+    </footer>
+</body>
+
+</html>

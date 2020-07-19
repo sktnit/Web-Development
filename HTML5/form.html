@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- form are used to collect user inputs -->
+    <!-- input types are: text, password, checkbox, radio button, submit button, reset button, file select box, color, date, datetime-local, email, month, number, range, search, tel, time, url, week, -->
+    <form action="backend.php">
+
+        <!-- div is used to make division or section -->
+        <div>
+            <!--label is used to associate a text label with a form <input> -->
+            <!-- for attribute associates a <label> with an <input> and click the associated label to focus/activate the input. for in label and id in input must have same value-->
+            <label for="uname">Username:</label>
+            <input type="text" name="username" id="uname">
+        </div>
+        <div>
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <div>
+            <label for="male">Sex:</label>
+            <!-- checked is a  -->
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="myphone">Phone:</label>
+            <input type="tel" id="myphone" name="myphone" placeholder="xx-xxxx-xxxx" required>
+        </div>
+        <div>
+            <label for="soccer">Please select one option:</label>
+            <input type="checkbox" id="soccer" name="sports" value="soccer">
+            <label for="soccer">Soccer</label>
+            <input type="checkbox" id="cricket" name="sports" value="cricket">
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" id="baseball" name="sports" value="baseball">
+            <label for="baseball">Baseball</label>
+        </div>
+        <div>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" required>
+        </div>
+        <div>
+            <label for="upload">Upload:</label>
+            <input type="file" id="upload" name="upload" id="file-select">
+        </div>
+        <div>
+            <label for="clg">College:</label>
+            <select name="clg" id="clg">
+                <option value="" selected>Select your College or university name</option>
+                <option value="dtu,delhi">Delhi Technological University</option>
+                <option value="nitbhopal">NIT, Bhopal</option>
+                <option value="ggsipu">Guru Gobind Singh Indraprastha Univrsity</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="rate">Rate:</label>
+            <input type="range" id="rate" name="rate" min="1" max="100" step="1" value="1">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="text">Write about yourself </label>
+            <textarea name="mytext" id="text" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+        <!-- id and class attribute-->
+        <!-- id selector is used to specify a style for a single, unique element -->
+        <!-- id must be unique for an HTML elements. It is used by CSS and javascript to access and manipulate the element with specific id-->
+        <div id="first">Id selector is used to specify a style for a single, unique element</div>
+
+        <!--  class selector is used to specify a style for a group of elements -->
+        <!--  class may be similar for different elements -->
+        <div class="def">class selector is used to specify a style for a group of elements</div>
+        <!-- we can specify more than one class to an HTML elements -->
+        <div class="redBg blackborder"></div>
+        <div class="def redBg" id="def2"></div>
+        
+        <!-- span*4 -->
+        <span class="shail sunn" id="main"></span>
+    </form>
+</body>
+
+</html>

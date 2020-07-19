@@ -1,0 +1,155 @@
+<!-- This line use to comment and ignore by the html parser-->
+
+<!-- define type of documents such html, xhtml etc. -->
+<!DOCTYPE html>
+
+<!-- lang attribute specifies the lang of the elements content -->
+<html lang="en">
+
+<!-- head tag is used to define information about content of html page. It includes character set, document title, styles, scripts etc. -->
+
+<head>
+
+    <!-- charset attribute is used to define character encoding standard for web browser -->
+    <meta charset="UTF-8">
+
+    <!-- name attribute values may be application-name author, description, generator, keywords, viewport -->
+    <meta name="description" content="This is description">
+
+    <!-- keywords to decribe the collection of words though which our page can be visited -->
+    <meta name="keywords" content="html, html tutorials, web development">
+
+    <!-- robots are used to indexed in google or other website and follow all the links in the website  -->
+    <meta name="robots" content="INDEX, FOLLOW">
+
+    <!-- viewport to define visible area of web page. It varies with device and make the page resposive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- to link external stylesheet use  link elements -->
+    <link rel="stylesheet" href="first.css">
+
+    <!-- to link with js file use script elements -->
+    <script src="first.js"></script>
+
+    <!-- title tag used to define tite of the doc -->
+    <title>First Page</title>
+</head>
+
+<body>
+    <!-- h1-h6 are heading elements used to define headings in html page -->
+    <h1>This is heading</h1>
+    <h2>This is heading</h2>
+    <h3>This is heading</h3>
+    <h4>This is heading</h4>
+    <h5>This is heading</h5>
+    <h6>This is heading</h6>
+
+    <!-- paragraph tag to define paragraph on web page-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, aliquam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b><em>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. In, similique.</em></b> Facere saepe quam reiciendis necessitatibus et facilis
+        odio nostrum rem, totam temporibus molestiae dicta magnam laboriosam nesciunt aliquam sed, unde aliquid
+        asperiores ullam perferendis. Libero delectus, animi inventore voluptates accusamus odit accusantium?</p>
+
+    <!--span tag is an inline elements whereas p is an block elments -->
+    <span>This is a span text.</span>
+    <span>This is another span text</span>
+
+    <!-- break tag is used to break the continuation of the line -->
+    <!--Special symbols-->
+    <!-- &nbsp; extra space -->
+    <p>We are going to break the line here <br> After break, line starts from newline and &nbsp; &nbsp; for extra space
+    </p>
+    <!-- less than and greater than -->
+    <p>This is an example of less than and greater than &lt; and &gt;</p>
+    <p>This is an example of pound &pound;</p>
+    <p>&dollar; represents dollar symbol.</p>
+    <p><h1>&#x20b9;</h1> represents Indian Rupees.</p>
+    <p>&copy; represents copyright symbol.</p>
+
+    <!-- Abbrevation -->
+    <p><abbr title="Shailesh Kumar Thakur">SKT</abbr> is doing a good job.</p>
+
+    <!-- preformatted tag used to display spaces, tabs, line breaks, etc. exactly as written in the HTML-->
+    <pre>
+        Twinkle, twinkle, little star, 
+            How I wonder what you are! 
+                Up above the world so high, 
+                    Like a diamond in the sky.
+    </pre>
+
+    <!-- Bookmark anchor -->
+    <a href="#sectionA">Jump to Section A</a>
+
+    <!-- horizontal ruler is to draw a horizontal line-->
+    <hr>
+
+    <!-- anchor tag use to link with new web page by hyperlink reference attribute and target atribute tells the browser where to open the linked document-->
+
+    <!-- target value: _blank (open in new window), _parent (opens in the parent window), _self (opens in the same window), _top (opens the linked document in the full browser window)  -->
+    <a href="https://google.com" target="_blank">Go to google</a><br>
+    <a href="https://facebook.com" target="_parent">Go to facebook</a><br>
+    <a href="https://twitter.com" target="_self">Go to twitter</a><br>
+    <a href="https://linkedin.com" target="_top">Go to Linkedin</a><br>
+    <a href="second.html" target="_blank">Go to second html page</a><br>
+
+    <!-- img tag include image from the given source in html page. -->
+    <img src="https://source.unsplash.com/100x100/?nature,water" alt="remote image" width="100" height="100">
+
+    <!-- unordered list type may be disc, square and circle-->
+    <ul type="circle">
+
+        <li>This is the first item if my unordered list</li>
+        <li>This is the second item if my unordered list</li>
+        <li>This is the third item if my unordered list</li>
+    </ul>
+
+    <!-- ordered list type may be 1, A, a, I, i -->
+    <ol type="I">
+
+        <li>This is the first item if my unordered list</li>
+        <li>This is the second item if my unordered list</li>
+        <li>This is the third item if my unordered list</li>
+    </ol>
+
+    <!-- table tag used to defines tables in html page-->
+
+    <table>
+        <!-- table contains table head and table body  -->
+        <thead>
+
+            <!-- tr defines table row -->
+            <tr>
+                <!-- th defines heading of each columns -->
+                <th>Name</th>
+                <th>Employee Id</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- td defines data of ach columns -->
+                <td> Shailesh </td>
+                <td> 34343 </td>
+                <td> Programmer </td>
+            </tr>
+            <tr>
+                <td> Sunny</td>
+                <td> 3483 </td>
+                <td> HTML Expert </td>
+            </tr>
+            <tr>
+                <td> Shubham </td>
+                <td> 7564 </td>
+                <td> Android Developer </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="sectionA">Section A</h2>
+    <a href="second.html#topicA">Go to TopicA</a>.
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+</body>
+
+</html>
