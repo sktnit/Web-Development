@@ -1,0 +1,33 @@
+<!-- CSS is define in three different ways: inline internall and external-->
+<!-- Inline has higher priority whereas internal and external css priority is depend upon the  order. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First</title>
+  <!-- External CSS can be link through link tag with external css reference -->
+  <link rel="stylesheet" href="first.css">
+
+  <!-- style tag is used to add internal css -->
+  <style>
+    /* CSS syntex contains three parts: Selector, property and value*/
+    /* p is selector used to target html p element and color, font-style is the property whose values are red and italic rescpectively. */
+    p {
+      color: red;
+      /* font-style: italic; */
+    }
+  </style>
+</head>
+
+<body>
+  <p style="color: blue;">
+    This is a demo.
+  </p>
+  <p>
+    This is another paragraph.
+  </p>
+</body>
+
+</html>

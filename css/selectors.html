@@ -1,0 +1,41 @@
+<!-- Selectors in css: element selector, id selector, class selector, group selector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Selectors
+  </title>
+  <style>
+    /* element selector */
+    p{
+      color: blue;
+    }
+
+    /* id selector */
+    #pid{
+      color: green;
+    }
+
+    /* class selcetor */
+    .primary{
+      color: red;
+      font-style: italic;
+    }
+
+    /* group selector */
+    span, .secondary{
+      color: white;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <p>this is the first paragraph.</p>
+  <p id="pid">this is the paragraph with id.</p>
+  <p class="primary">this is the paragraph with class.</p>
+  <p class="secondary primary">this is second paragraph.</p>
+  <span>this is third paragraph.</span>
+  </body>
+</html>
