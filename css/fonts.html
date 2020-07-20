@@ -1,0 +1,40 @@
+<!--Two categories of CSS fonts: Web safe and web fonts-->
+<!-- Web safe are preinstalle fonts and web fonts are need to installed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fonts</title>
+
+  <!-- To embed a web font, copy the reference into the head of the html -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <!-- style -->
+  <style>
+    p{
+      /* font stack is a list of fonts in the CSS font-family declaration */
+      font-family: Arial, Helvetica, 'PT Sans', sans-serif;;
+
+      /* 1px = 1/96 inch */
+      /* font-size: 24px; */
+
+      /* 1.5625em = 24px */
+      /* 156.25% = 24px */
+      font-size: 1em;
+
+      /**/
+      line-height: 20px;
+    }
+
+    span{
+      font-weight: bold;
+      font-style: italic;
+    }
+
+  </style>
+</head>
+<body>
+  <h4>CSS Fonts</h4>
+  <p>Lorem ipsum dolor sit amet <span>consectetur adipisicing</span> elit. Deleniti, vero.</p>
+</body>
+</html>

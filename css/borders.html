@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borders</title>
+
+  <!-- Style -->
+  <style>
+    #secondPara {
+      background-color: rgb(0, 255, 242);
+      height: 100px;
+      width: 200px;
+      border: 2px solid red;
+      /*1 px = 0.75pt*/
+      /* border-width: 2px;
+      border-style: solid;
+      border-color: red; */
+      border-radius: 10px;
+    }
+
+    #thirdPara {
+      background-color: rgb(216, 205, 48);
+      height: 100px;
+      width: 455px;
+      border-top: 2px solid rgb(231, 22, 231);
+      border-right: 2px solid rgb(18, 10, 133);
+      border-bottom: 2px solid rgba(9, 144, 27, 0.774);
+      border-left: 2px solid rgb(156, 42, 13);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 14px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 24px;
+    }
+
+    #fourthPara {
+      color: white;
+      height: 582px;
+      width: 450px;
+      border: 2px solid red;
+      background-image: url("demo.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      /* background-position: 192px 34px; */
+      /* background-position: bottom right; */
+      /* background-position: top center; */
+    }
+  </style>
+</head>
+
+<body>
+  <p>This is first paragraph.</p>
+  <p id="secondPara">This is the second paragraph.</p>
+  <p id="thirdPara">This is the third paragraph.</p>
+  <p id="fourthPara">This is the fourth paragraph.</p>
+</body>
+
+</html>
