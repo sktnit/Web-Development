@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoxModel</title>
+</head>
+<!-- style -->
+<style>
+
+  /* Universal selector */
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    background-color: rgb(231, 230, 241);
+    border: 30px solid rgb(64, 6, 119);
+
+    /* first way to add
+    padding-top: 79px;
+    padding-bottom: 79px;
+    padding-left: 34px; 
+    padding-right: 79px; */
+
+    /* second way
+    padding: top right bottom left;
+    padding: 79px 79px 79px 34px; */
+
+    /*first way
+    margin-top: 79px;
+    margin-bottom: 79px;
+    margin-left: 34px; 
+    margin-right: 79px;*/
+
+    /* second way
+    margin: top right bottom left;
+    margin: 79px 79px 79px 34px; */
+    
+    /* padding: y(top/bottom) x(right/left); */
+    /* margin: y(top/bottom) x(right/left); */
+    padding: 34px 19px;
+    margin: 14px 19px;
+    border-radius: 23px;
+    width: 400px;
+  }
+</style>
+<body>
+  <div class="container">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique rem possimus ducimus, dolor consequuntur
+      mollitia molestias dolores. Totam perspiciatis mollitia officiis maxime. Aperiam enim quam aut sequi facere
+      eos dicta reiciendis numquam nam nihil, repudiandae placeat eius sed ducimus ab?
+    </p>
+  </div>
+
+  <div class="container">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique rem possimus ducimus, dolor consequuntur
+      mollitia molestias dolores. Totam perspiciatis mollitia officiis maxime. Aperiam enim quam aut sequi facere
+      eos dicta reiciendis numquam nam nihil, repudiandae placeat eius sed ducimus ab?
+    </p>
+  </div>
+
+  <div class="container">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique rem possimus ducimus, dolor consequuntur
+      mollitia molestias dolores. Totam perspiciatis mollitia officiis maxime. Aperiam enim quam aut sequi facere
+      eos dicta reiciendis numquam nam nihil, repudiandae placeat eius sed ducimus ab?
+    </p>
+  </div>
+</body>
+
+</html>
