@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- style -->
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("img/32715.jpg");
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: 500;
+        }
+
+        .left {
+            /* float:left; */
+            display: inline-block;
+            position: absolute;
+            margin: 25px;
+            left: 34px;
+            top: 0px;
+            color: white;
+            /* border: 2px solid red; */
+            /* border: 2px solid grey; */
+        }
+
+        .left img {
+            width: 250px;
+            height: 75px;
+            filter: invert();
+        }
+
+        .mid {
+            /* display: inline-block; */
+            background-color: rgb(36, 36, 36);
+            display: block;
+            width: 36%;
+            margin: 20px auto;
+            color: white;
+            /* border: 2px solid red; */
+            border: 2px solid grey;
+            border-radius: 10px;
+        }
+
+        .right {
+            /* float: right; */
+            display: inline-block;
+            margin: 20px;
+            position: absolute;
+            right: 34px;
+            top: 0px;
+            color: white;
+            /* border: 2px solid red; */
+            /* border: 2px solid grey; */
+        }
+
+        .navigation {
+            display: inline-block;
+            padding: 14px 14px;
+            margin-left: 100px;
+        }
+
+        .navigation li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navigation li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navigation li a:hover,
+        .navigation li a.active {
+            color: rgb(202, 202, 202);
+            text-decoration: underline;
+            /* color: gray; */
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 10px 4px;
+            background-color: rgb(36, 36, 36);
+            color: white;
+            padding: 3px 28px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            /* background-color: rgb(36, 36, 36); */
+            color: rgb(202, 202, 202);
+        }
+
+        .container {
+            /* border: 0px solid white; */
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai 2', cursive;
+            background: transparent;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 0px solid none;
+            outline: none;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        input{
+            color: white;
+        }
+
+        .form-group input::placeholder {
+            color: rgb(71, 71, 71);
+        }
+
+        .container h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .container button {
+            display: block;
+            margin: 20px auto;
+            background-color: black;
+            border: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="img/logo.jpg" alt="">
+            </div>
+
+            <div class="mid">
+                <ul class="navigation">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <button class="btn">Join Us</button>
+                <button class="btn">Call Us</button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pseudo Selector</title>
+  <style>
+    .container {
+      border: 2px solid red;
+      background-color: rgb(223, 245, 201);
+      padding: 34px;
+      margin: 34px auto;
+      width: 666px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      color: rgb(5, 0, 0);
+      background-color: rgb(221, 166, 38);
+    }
+
+    a:visited {
+      background-color: yellow;
+    }
+
+    a:active {
+      background-color: darkblue;
+    }
+
+    a.ex1:hover,
+    a.ex1:active {
+      color: red;
+    }
+
+    a.ex2:hover,
+    a.ex2:active {
+      font-size: 150%;
+    }
+
+    a.ex3:hover,
+    a.ex3:active {
+      background: red;
+    }
+
+    a.ex4:hover,
+    a.ex4:active {
+      font-family: monospace;
+    }
+
+    a.ex5:visited,
+    a.ex5:link {
+      text-decoration: none;
+    }
+
+    a.ex5:hover,
+    a.ex5:active {
+      text-decoration: underline;
+    }
+
+    .btn {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      background-color: crimson;
+      padding: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+
+    .btn:hover {
+      color: darkgoldenrod;
+      background-color: rgb(223, 245, 201);
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="cont1">
+    <h3>This is my heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, reprehenderit. Quam culpa eius aliquam id
+      cumque saepe, provident odio sed eos quia nihil modi error voluptate vero autem quibusdam aperiam exercitationem!
+      Quam, consequuntur velit.</p>
+    <p>Mouse over the links to see them change layout.</p>
+
+    <p><a class="ex1" href="default.asp">This link changes color</a></p>
+    <p><a class="ex2" href="default.asp">This link changes font-size</a></p>
+    <p><a class="ex3" href="default.asp">This link changes background-color</a></p>
+    <p><a class="ex4" href="default.asp">This link changes font-family</a></p>
+    <p><a class="ex5" href="default.asp">This link changes text-decoration</a></p>
+
+    <a href="https://www.google.com" class="btn">Read more</a>
+    <button class="btn">Contact us</button>
+  </div>
+</body>
+
+</html>

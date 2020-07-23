@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <title>Float</title>
+  <!-- style -->
+  <style>
+    * {
+      border: 0px;
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Ubuntu Mono', monospace;
+    }
+
+    .container {
+      width: 900px;
+      border: 3px solid purple;
+      margin: 33px auto;
+      background-color: rgb(63, 195, 228);
+    }
+
+    .item {
+      border: 3px solid gray;
+      margin: 12px 12px;
+      padding: 12px 10px;
+      background: rgb(209, 180, 117);
+      border-radius: 10px;
+    }
+
+    /* Alignment */
+    #fruit {
+      float: left;
+      width: 47%;
+    }
+
+    #computer {
+      float: right;
+      width: 47%;
+    }
+
+    #stationary {
+      /* float: left; */
+
+      /* Neither of float will overlap stationary */
+      /* clear: left;
+      clear: right; */
+      clear: both;
+      width: 97%;
+    }
+
+    p, h3{
+      text-align: justify;
+    }
+
+    h1{
+      margin: auto;
+      width: 400px;
+    }
+    .para {}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to my store</h1>
+    <div id="fruit" class="item">
+      <h3>Fruit</h3>
+      <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, placeat!
+        Magni, nostrum. Ea fuga inventore molestias est nobis error consequuntur, magnam libero minus laboriosam odit
+        dicta quo similique ab commodi labore adipisci autem dolorum maiores porro illum dolorem! Quibusdam, facilis.
+        <!-- add more text -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quas aspernatur facilis provident atque natus
+        nobis sint eius autem maiores ipsum in similique laboriosam, repudiandae quae officia eum eveniet praesentium.
+      </p>
+    </div>
+    <div id="computer" class="item">
+      <h3>Computer</h3>
+      <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, placeat!
+        Magni, nostrum. Ea fuga inventore molestias est nobis error consequuntur, magnam libero minus laboriosam odit
+        dicta quo similique ab commodi labore adipisci autem dolorum maiores porro illum dolorem! Quibusdam, facilis.
+        <!-- add more text -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quas aspernatur facilis provident atque natus
+        nobis sint eius autem maiores ipsum in similique laboriosam, repudiandae quae officia eum eveniet praesentium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eligendi.</p>
+    </div>
+    <div id="stationary" class="item">
+      <h3>Stationary</h3>
+      <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+        placeat! Magni, nostrum. Ea fuga inventore molestias est nobis error consequuntur, magnam libero minus
+        laboriosam odit dicta quo similique ab commodi labore adipisci autem dolorum maiores porro illum dolorem!
+        Quibusdam, facilis.</p>
+    </div>
+    <div id="Watch" class="item">
+      <h3>Watch</h3>
+      <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, placeat!
+        Magni, nostrum. Ea fuga inventore molestias est nobis error consequuntur, magnam libero minus laboriosam odit
+        dicta quo similique ab commodi labore adipisci autem dolorum maiores porro illum dolorem! Quibusdam, facilis.
+        <!-- add more text -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quas aspernatur facilis provident atque natus
+        nobis sint eius autem maiores ipsum in similique laboriosam, repudiandae quae officia eum eveniet praesentium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eligendi.</p>
+    </div>
+  </div>
+</body>
+
+</html>
