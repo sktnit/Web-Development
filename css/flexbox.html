@@ -1,0 +1,106 @@
+<!-- flexbox (Flexible box) -->
+<!-- Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Styke -->
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        /* flexbox container  */
+        /* it give the container the ability to alter its items’ width/height (and order) to best fill the available space  */
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* margin: 50px; */
+            /* padding: 30px; */
+            display: flex; /* It enables a flex context for all its direct children. */
+
+            /* flex direction */
+            /* flex-direction: row (default)| row-reverse | column | column-reverse; */
+            /* flex-direction: column; */
+            
+            /* flex-wrap  */
+            /* By default, flex is set to nowrap. It causing items to overflow the container*/
+            /* flex-wrap: nowrap | wrap | wrap-reverse | initial | inherit; */
+            /* flex-wrap: wrap; */
+
+            /* flex-flow */
+            /* flex-flow is shorthand for the flex-direction and flex-wrap properties */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content will justify the content in horizontal direction*/
+            /* justify-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right | safe | unsafe; */
+            justify-content: space-evenly;
+
+            /* align-item will justify the content in vertical direction */
+            /* align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end |safe | unsafe; */
+            align-items: center;
+        }
+
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            /* display: inline; */;
+        }
+
+        #item1{
+            /* order property controls the order in which they appear in the flex container */
+            order: 2;* /* default is 0 */
+            
+        }
+
+        #item2{
+            /* flex-grow gives ability for a flex item to grow in proportion*/
+            flex-grow: 2; /* default value 0 */
+        }
+
+        #item3{
+            /* flex-shrinks gives the ability to shrink */
+            /*flex-shrink: 3; */ /* default 1 */ 
+
+            /* fles-basis defines the default size of an element before the remaining space is distributed. */
+            /* when flex-direction in container is set to row flex-basis: will control width */
+            /* when flex-direction in container is set to column flex-basis: will control height */
+            /* flex-basis: 300px; */
+            flex: 0 1 300px;
+        }
+
+        #item4{
+            /* flex is the shorthand for flex-grow, flex-shrink and flex-basis combined */
+            /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+            /* flex-shrink and flex-basis are optional. The default is 0 1 auto, but if you set it with a single number value, it’s like 1 0. */
+            
+            /* align-self */
+            /* It allows the default alignment (or the one specified by align-items) to be overridden for individual flex items. */
+            /* align-self: auto | flex-start | flex-end | center | baseline | stretch; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Fourth Box</div>
+        <!-- <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+</body>
+
+</html>
