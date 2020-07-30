@@ -1,0 +1,103 @@
+<!-- before and after psudo-selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- style -->
+    <style>
+        /* * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        } */
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        header::before{
+            content:"";
+            background: url("https://source.unsplash.com/collection/190727/1600x900") center center/cover no-repeat;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.4;
+        }
+    
+        section {
+            font-family: 'Bree Serif', serif;
+            height: 300px;
+            margin: 200px 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+        }
+
+        .navigation {
+            font-family: 'Bree Serif', serif;
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 24px;
+        }
+
+        section::before {
+            content: "This is before content";
+            background-color: green;
+        }
+
+        section::after {
+            content: "This is a after content";
+            background-color: chocolate;
+        }
+
+        /* header{
+            display: flex;
+            flex-direction: column
+        } */
+
+        h1 {
+            font-size: 4rem;
+            margin: 24px 24px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to tutorial of CSS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet quidem, cumque adipisci ea esse.
+            Repudiandae sunt nisi ratione blanditiis nobis ipsum? Obcaecati, nemo. Assumenda, aliquam debitis cupiditate
+            eaque id tenetur blanditiis natus dolorem incidunt ipsa dicta sed! Omnis, explicabo.</p>
+    </section>
+</body>
+
+</html>

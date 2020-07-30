@@ -1,0 +1,66 @@
+<!-- Resposive designing -->
+<!-- Various ways are: -->
+<!-- setting up the viewport -->
+<!-- using max-width/max-height -->
+<!-- using css media queries -->
+<!-- using rem/vh/vw units over pixels -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonsive Website</title>
+    <!-- style -->
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        html{
+            font-size: 25px;
+        }
+        .container{
+            /* width:100%; */
+
+            /* vh automatically calculate the height of browser*/
+            height: 100vh;
+
+            /* vw calculates the width of the browser */
+            /* width: 100vw; */
+
+            font-size: 10px;
+            border :2px solid red;
+        }
+        h1 {
+            text-align: center;
+        }
+        .head1{
+            /* 3em in font size means 3 times of its parent container i.e. 30px */
+            font-size: 3em;
+
+            /* 3em in padding means 3 times of font-size i.e. 90px */
+            padding: 3em;
+        }
+        .head2{
+            /* 3rem in font-size meands 3 times of parent html i.e. 75px */
+            font-size: 3rem;
+
+            /* 3rem in padding means 3 times of parent html i.e. 75px */
+            padding: 3rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="head1">First heading</h1>
+        <h1 class="head2">Second heading</h1>
+        <h1 class="head3">Third heading</h1>
+        <h1 class="head4">Fourth heading</h1>
+    </div>
+</body>
+
+</html>

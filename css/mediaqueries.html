@@ -1,0 +1,60 @@
+<!-- media queries -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+
+    <!-- style -->
+    <style>
+        .box {
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        @media only screen and (max-width:300px) {
+            #box1 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box2 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            #box3 {
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 800px) {
+            #box4 {
+                display: block;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">This is the template for iphone</div>
+    <div class="box" id="box2">This is the template for Tablet</div>
+    <div class="box" id="box3">This is the template for Computer Screen</div>
+    <div class="box" id="box4">This is the template for widescreen computers</div>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* css reset */
+* {
+    box-sizing: border-box;
+    margin    : 0;
+    padding   : 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/*navbar: logo and image */
+#logo {
+    margin: 4px 34px 0px 34px;
+}
+
+#logo img {
+    height   : 60px;
+    /* margin: 34px 45px; */
+}
+
+/* navbar */
+#navbar {
+    display    : flex;
+    align-items: center;
+    position   : sticky;
+    top        : 0px;
+    /* left       : 0px; */
+}
+
+/* background image */
+#navbar::before {
+    content         : "";
+    background-color: black;
+    position        : absolute;
+    top             : 0px;
+    left            : 0px;
+    height          : 100%;
+    width           : 100%;
+    z-index         : -1;
+    opacity         : 0.8;
+}
+
+/* navbar: list */
+#navbar ul {
+    display    : flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar ul li {
+    list-style    : none;
+    font-size     : 1.3rem;
+    /* font-family: coloras; */
+}
+
+#navbar ul li a {
+    color          : white;
+    display        : block;
+    padding        : 3px 22px;
+    border-radius  : 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color           : black;
+    background-color: white;
+
+}
+
+/* home section */
+#home::before {
+    content         : "";
+    background-color: black;
+    background      : url("/img/bg1.jpg") center center no-repeat;
+    position        : absolute;
+    top             : 0px;
+    left            : 0px;
+    height          : 600px;
+    width           : 100%;
+    z-index         : -1;
+    opacity         : 0.85;
+}
+
+#home {
+    display        : flex;
+    flex-direction : column;
+    padding        : 3px 200px;
+    height         : 530px;
+    justify-content: center;
+    align-items    : center;
+}
+
+/* service section */
+#services {
+    margin : 1rem 4rem;
+    display: flex;
+}
+
+#services .box {
+    border       : 2px solid brown;
+    margin       : 2px 55px;
+    padding      : 34px;
+    border-radius: 28px;
+    background   : #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height : 160px;
+    margin : auto;
+    display: block;
+}
+
+#services .box p {
+    text-align : justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home h1 {
+    color         : white;
+    font-family   : 'Lora', serif;
+    /* font-family: consolas; */
+    text-align    : center;
+}
+
+#home p {
+    color      : white;
+    font-family: 'Lora', serif;
+    text-align : center;
+    font-size  : 1.5rem;
+}
+
+/* utility */
+.hprimary {
+    font-size: 3.8rem;
+    padding  : 12px;
+}
+
+.hsecondary {
+    font-size: 2rem;
+    padding  : 12px;
+}
+
+.btn {
+    padding         : 6px 20px;
+    border          : 2px solid white;
+    background-color: brown;
+    color           : white;
+    margin          : 17px;
+    font-size       : 1.5rem;
+    border-radius   : 10px;
+    cursor          : pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+/* client-section */
+#client-section::before {
+    content   : "";
+    position  : absolute;
+    background: url("/img/food-web-wal.jpg") center center/cover no-repeat;
+    width     : 100%;
+    height    : 100%;
+    z-index   : -1;
+    opacity   : 0.3;
+}
+
+#client-section {
+    height  : 344px;
+    position: relative;
+}
+
+#clients {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 124px;
+}
+
+/* contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content   : "";
+    position  : absolute;
+    background: url("/img/contact-us.jpeg") center center/cover no-repeat;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    height    : 100%;
+    z-index   : -1;
+    opacity   : 0.5
+}
+
+#contact-box {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    padding-bottom : 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width    : 100%;
+    padding  : 0.5rem;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size  : 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    background: black;
+    color     : white;
+    padding   : 9px 20px;
+}
